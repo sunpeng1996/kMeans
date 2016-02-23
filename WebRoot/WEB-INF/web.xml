@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ 	<servlet>
+ 		<servlet-name>IndexServlet</servlet-name>
+ 		<servlet-class>cn.hit.IndexServlet</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet>
+ 		<servlet-name>ExecuteServlet</servlet-name>
+ 		<servlet-class>cn.hit.servlet.ExecuteServlet</servlet-class>
+ 	</servlet>
+ 	<servlet>
+ 		<servlet-name>BaseServlet</servlet-name>
+ 		<servlet-class>cn.hit.servlet.BaseServlet</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet>
+ 		<servlet-name>PoiServlet</servlet-name>
+ 		<servlet-class>cn.hit.servlet.PoiServlet</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet>
+ 		<servlet-name>JexcelServlet</servlet-name>
+ 		<servlet-class>cn.hit.servlet.JexcelServlet</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet>
+ 		<servlet-name>FinalServlet</servlet-name>
+ 		<servlet-class>cn.hit.servlet.FinalServlet</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet-mapping>
+ 		<servlet-name>FinalServlet</servlet-name>
+ 		<url-pattern>/FinalServlet</url-pattern>
+ 	</servlet-mapping>
+ 	<servlet-mapping>
+ 		<servlet-name>JexcelServlet</servlet-name>
+ 		<url-pattern>/JexcelServlet</url-pattern>
+ 		</servlet-mapping>
+ 	
+ 	
+ 	<servlet-mapping>
+ 		<servlet-name>PoiServlet</servlet-name>
+ 		<url-pattern>/PoiServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+
+ 	
+ 	
+ 	<servlet-mapping>
+ 		<servlet-name>BaseServlet</servlet-name>
+ 		<url-pattern>/BaseServlet</url-pattern>
+ 	</servlet-mapping>
+ 	<servlet-mapping>
+ 		<servlet-name>ExecuteServlet</servlet-name>
+ 		<url-pattern>/ExecuteServlet</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet-mapping>
+ 		<servlet-name>IndexServlet</servlet-name>
+ 		<url-pattern>/IndexServlet</url-pattern>
+ 	</servlet-mapping>
+ 
+ 
+ 
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
